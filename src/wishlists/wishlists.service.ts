@@ -18,7 +18,6 @@ export class WishlistsService {
     private wishlistRepository: Repository<Wishlist>,
     private wishesService: WishesService,
   ) {}
-
   async create(owner: User, createWishlistDto: CreateWishlistDto) {
     delete owner.password;
     delete owner.email;
